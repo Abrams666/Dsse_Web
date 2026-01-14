@@ -1,0 +1,27 @@
+:root {
+	--color1: #001b2c;
+	--color2: #004a94;
+	--color3: #43c3dd;
+	--color4: #d9edf8;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: sans-serif;
+	text-decoration: none;
+	outline: none;
+}
+html,
+body {
+	width: 100vw;
+	height: auto;
+}
+
+section {
+	width: 100%;
+	height: auto;
+}
