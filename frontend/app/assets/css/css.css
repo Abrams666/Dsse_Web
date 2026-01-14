@@ -19,9 +19,23 @@ html,
 body {
 	width: 100vw;
 	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
 }
-
 section {
 	width: 100%;
 	height: auto;
+}
+ul {
+	list-style: none;
+}
+#__nuxt {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: top;
 }

@@ -52,7 +52,6 @@ header {
 ul {
 	height: 100%;
 	width: auto;
-	list-style: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
