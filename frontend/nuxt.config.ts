@@ -13,4 +13,5 @@ export default defineNuxtConfig({
 			title: "國立中央大學太空科學與工程學系",
 		},
 	},
+	modules: ["@pinia/nuxt"],
 });
