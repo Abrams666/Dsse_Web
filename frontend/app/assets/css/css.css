@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
 	--color1: #001b2c;
 	--color2: #004a94;
@@ -8,9 +10,9 @@
 	display: none;
 }
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+	/* padding: 0; */
+	/* margin: 0;
+	border: 0; */
 	font-family: sans-serif;
 	text-decoration: none;
 	outline: none;
