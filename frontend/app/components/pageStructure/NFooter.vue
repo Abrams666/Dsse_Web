@@ -90,16 +90,15 @@ ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	align-items: start;
+	align-items: stretch;
 	gap: 50px;
 }
 .topDiv {
 	width: 25%;
-	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	justify-content: center;
+	justify-content: start;
 }
 #copyright {
 	width: 100%;
@@ -111,7 +110,6 @@ ul {
 }
 #left {
 	width: 50%;
-	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
