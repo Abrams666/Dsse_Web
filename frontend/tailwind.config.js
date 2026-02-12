@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./app/**/*.{vue,js,ts,jsx,tsx}"],
+	content: ["./app/*/.{vue,js,ts,jsx,tsx}", "./app.vue"],
 	theme: {
 		extend: {
 			colors: {
@@ -9,9 +9,9 @@ export default {
 				color3: "#43c3dd",
 				color4: "#d9edf8",
 			},
-		},
-		width: {
-			"1/9": "11.111111%",
+			width: {
+				"1/9": "11.111111%",
+			},
 		},
 	},
 	plugins: [],

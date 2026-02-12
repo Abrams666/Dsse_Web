@@ -10,5 +10,5 @@
 </template>
 
 <script setup>
-import pages from "./assets/json/pages.json";
+import pages from "~/assets/json/pages.json";
 </script>
