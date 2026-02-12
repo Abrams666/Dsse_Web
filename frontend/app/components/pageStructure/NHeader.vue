@@ -3,8 +3,8 @@
 		<a href="/" class="h-full w-auto flex flex-row items-center gap-3"
 			><img src="/pageStructure/dsseLogo.png" class="h-full aspect-[1:1]" alt="" />
 			<div class="flex flex-col items-start justify-center">
-				<h1 class="text-[var(--color4)] font-bold text-[1.15rem]">國立中央大學太空科學與工程學系</h1>
-				<p class="text-[var(--color4)] text-[0.85rem]">Department of Space Science and Engineering, NCU</p>
+				<h1 class="text-[var(--color4)] font-bold text-[1.2rem]">國立中央大學太空科學與工程學系</h1>
+				<p class="text-[var(--color4)] text-[0.8rem]">Department of Space Science and Engineering, NCU</p>
 			</div></a
 		>
 		<ul class="h-full w-auto flex flex-row justify-center items-center gap-5">
