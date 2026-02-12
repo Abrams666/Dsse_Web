@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"chineseName": "張起維",
-		"englishName": "Loren Chang",
 		"position": ["教授", "太空系系主任", "特聘教授"],
+		"education": "美國科羅拉多大學博士",
 		"Specializations": [
 			"大氣潮汐",
 			"行星波",
@@ -22,23 +22,552 @@
 	},
 	{
 		"id": 2,
-		"chineseName": "陳建志",
-		"englishName": "Chien-Chih Chen",
+		"chineseName": "郝玲妮",
+		"position": ["教授"],
+		"education": "美國萊斯大學博士",
+		"Specializations": ["太空電漿物理", "磁層物理"],
+		"phone": "(03)422-7151 #65761",
+		"website": "#",
+		"email": "lnhau@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 3,
+		"chineseName": "劉正彥",
+		"position": ["教授"],
+		"education": "美國猶他州立大學博士",
+		"Specializations": ["電離層物理", "太空物理"],
+		"phone": "(03)422-7151 #65763",
+		"website": "https://irsl.ss.ncu.edu.tw",
+		"email": "jyliu@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 4,
+		"chineseName": "潘貞杰",
+		"position": ["教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["雷達氣象學", "電波傳播"],
+		"phone": "(03)422-7151 #65762",
+		"website": "#",
+		"email": "cjpan@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 5,
+		"chineseName": "黃健民",
+		"position": ["教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["電離層物理", "數值模擬"],
+		"phone": "(03)422-7151 #65773",
+		"website": "#",
+		"email": "cmh@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 6,
+		"chineseName": "許志浤",
+		"position": ["教授"],
+		"education": "美國阿拉斯加大學博士",
+		"Specializations": ["外太空探索", "科學創新", "人工智慧", "跨域研究"],
+		"phone": "(03)422-7151 #65767",
+		"website": "#",
+		"email": "jhshue@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 7,
+		"chineseName": "趙吉光",
+		"position": ["教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["太空酬載", "太空環境測試", "電離層物理"],
+		"phone": "(03)422-7151 #65754",
+		"website": "http://spl.ss.ncu.edu.tw",
+		"email": "ckchao@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 8,
+		"chineseName": "林佳賢",
+		"position": ["教授"],
+		"education": "美國南加州大學博士",
+		"Specializations": ["太陽物理"],
+		"phone": "(03)422-7151 #65774",
+		"website": "#",
+		"email": "chlin@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 9,
+		"chineseName": "郭政靈",
+		"position": ["教授"],
+		"education": "國立成功大學博士",
+		"Specializations": ["太空光學", "行星遙測", "大氣電學"],
+		"phone": "(03)422-7151 #65753",
+		"website": "https://sites.google.com/g.ncu.edu.tw/ncu-sol/",
+		"email": "clkuo@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 10,
+		"chineseName": "楊雅惠",
+		"position": ["教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["太陽物理", "磁層物理"],
+		"phone": "(03)422-7151 #65765",
+		"website": "http://www.ss.ncu.edu.tw/~yhyang/",
+		"email": "yhyang@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 11,
+		"chineseName": "林映岑",
+		"position": ["副教授"],
+		"education": "美國維吉尼亞理工學院暨州立大學博士",
+		"Specializations": ["全球定位系統", "遙測技術", "太空任務設計", "光學雷達", "高層大氣數值模擬", "日地耦合", "大氣太空耦合", "AI機器學習"],
+		"phone": "(03)422-7151 #65770",
+		"website": "http://cia.ss.ncu.edu.tw/",
+		"email": "cissi@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 12,
+		"chineseName": "蘇清論",
+		"position": ["助理研究員"],
+		"education": "國立中央大學博士",
+		"Specializations": ["雷達系統", "電離層物理"],
+		"phone": "(03)422-7151 #65779",
+		"website": "#",
+		"email": "clsu@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 13,
+		"chineseName": "葉永烜",
+		"position": ["教授"],
+		"education": "美國加州大學聖地牙哥分校博士",
+		"Specializations": ["行星大氣", "太陽系演化"],
+		"phone": "(03)422-7151 #65959",
+		"website": "#",
+		"email": "wingip@astro.ncu.edu.tw"
+	},
+	{
+		"id": 14,
+		"chineseName": "朱延祥",
 		"position": ["教授", "特聘教授"],
-		"Specializations": [
-			"大氣潮汐",
-			"行星波",
-			"中氣層",
-			"下層恆溫層",
-			"大氣-電離層耦合",
-			"衛星資料分析",
-			"衛星遙測",
-			"小型人造衛星",
-			"太空輻射",
-			"科學酬載"
-		],
-		"phone": "(03)422-7151 #65752",
-		"website": "http://www.ss.ncu.edu.tw/~cchen/",
-		"email": "cchen@jupiter.ss.ncu.edu.tw"
+		"education": "國立中央大學博士",
+		"Specializations": ["雷達遙測大氣", "電離層物理"],
+		"phone": "(03)422-7151 #65764",
+		"website": "http://www.ss.ncu.edu.tw/~yhchu/",
+		"email": "yhchu@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 15,
+		"chineseName": "劉說安",
+		"position": ["教授"],
+		"education": "美國密西根大學博士",
+		"Specializations": ["電波傳播", "大氣太空科學", "微波遙測", "GPS應用"],
+		"phone": "(03)422-7151 #57631",
+		"website": "#",
+		"email": "yueian@csrsr.ncu.edu.tw"
+	},
+	{
+		"id": 16,
+		"chineseName": "蔡龍治",
+		"position": ["教授"],
+		"education": "美國猶他州立大學博士",
+		"Specializations": ["電離層物理", "雷達信號處理"],
+		"phone": "(03)422-7151 #57621",
+		"website": "#",
+		"email": "lctsai@csrsr.ncu.edu.tw"
+	},
+	{
+		"id": 17,
+		"chineseName": "林唐煌",
+		"position": ["教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["環境變遷遙測", "衛星遙測", "災害偵測", "大氣輻射"],
+		"phone": "(03)422-7151 #65753",
+		"website": "#",
+		"email": "thlin@csrsr.ncu.edu.tw"
+	},
+	{
+		"id": 18,
+		"chineseName": "任玄",
+		"position": ["副教授"],
+		"education": "美國馬利蘭大學博士",
+		"Specializations": ["遙測影像處理", "目標物偵測與分類", "圖形識別"],
+		"phone": "(03)422-7151 #57666",
+		"website": "#",
+		"email": "hren@csrsr.ncu.edu.tw"
+	},
+	{
+		"id": 19,
+		"chineseName": "許藝瓊",
+		"position": ["副教授"],
+		"education": "國立陽明大學藥理學研究所博士",
+		"Specializations": ["智慧醫療", "太空生醫", "腫瘤基因體學", "生物統計"],
+		"phone": "(03)422-7151 #27752",
+		"website": "#",
+		"email": "syic@ncu.edu.tw"
+	},
+	{
+		"id": 20,
+		"chineseName": "吳仁銘",
+		"position": ["教授"],
+		"education": "美國南加州大學博士",
+		"Specializations": ["電通訊理論", "高速介面IC設計", "通訊系統IC設計及實作", "通訊之訊號處理"],
+		"phone": "(03)571-5131 #62211",
+		"website": "#",
+		"email": "jmwu@ee.nthu.edu.tw"
+	},
+	{
+		"id": 21,
+		"chineseName": "王祥宇",
+		"position": ["兼任教授"],
+		"education": "國立交通大學博士",
+		"Specializations": ["可見光與紅外線儀器"],
+		"phone": "(02)2366-5338",
+		"website": "#",
+		"email": "sywang@asiaa.sinica.edu.tw"
+	},
+	{
+		"id": 22,
+		"chineseName": "呂凌霄",
+		"position": ["兼任副教授"],
+		"education": "美國阿拉斯加大學博士",
+		"Specializations": ["太空物理", "電漿物理", "數值模擬"],
+		"phone": "(03)422-7151 #65771",
+		"website": "http://www.ss.ncu.edu.tw/~lyu/",
+		"email": "lyu@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 23,
+		"chineseName": "陳明桂",
+		"position": ["兼任副教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["理論物理", "磁層物理", "數值模擬"],
+		"phone": "0",
+		"website": "#",
+		"email": "cmq@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 24,
+		"chineseName": "吳仁銘",
+		"position": ["教授"],
+		"education": "美國南加州大學博士",
+		"Specializations": ["電通訊理論", "高速介面IC設計", "通訊系統IC設計及實作", "通訊之訊號處理"],
+		"phone": "(03)571-5131 #62211",
+		"website": "#",
+		"email": "jmwu@ee.nthu.edu.tw"
+	},
+	{
+		"id": 25,
+		"chineseName": "李奕德",
+		"position": ["兼任助理教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["電離層電波科學", "電離層熱氣層耦合數值模擬", "電離層資料同化", "太空天氣"],
+		"phone": "(02)2349-1283",
+		"website": "#",
+		"email": "itlee@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 26,
+		"chineseName": "林其彥",
+		"position": ["兼任助理教授"],
+		"education": "國立中央大學博士",
+		"Specializations": ["電離層資料同化"],
+		"phone": "(03)422-7151 #65775",
+		"website": "#",
+		"email": "chiyen.lin@g.ncu.edu.tw / chiyen.lin1016@gmail.com"
+	},
+	{
+		"id": 27,
+		"chineseName": "周瑞宏",
+		"position": ["兼任助理教授"],
+		"education": "國立臺灣大學博士",
+		"Specializations": ["毫米波陣列天線設計", "毫米波量測技術", "升降頻模組設計", "整流天線系統設計"],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 28,
+		"chineseName": "蔡華龍",
+		"position": ["兼任助理教授"],
+		"education": "國立臺灣大學博士",
+		"Specializations": [],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 29,
+		"chineseName": "張富淵",
+		"position": ["兼任助理教授"],
+		"education": "國立中央大學博士v",
+		"Specializations": [],
+		"phone": "0",
+		"website": "#",
+		"email": "fychang1228@gmail.com"
+	},
+	{
+		"id": 30,
+		"chineseName": "林致宏",
+		"position": ["兼任助理教授"],
+		"education": "國立臺灣大學博士",
+		"Specializations": ["自動控制", "衛星姿態控制", "立方衛星及系統"],
+		"phone": "(02)8698-1068 #2551",
+		"website": "#",
+		"email": "benjhlin@g.ncu.edu.tw、ben.chuhhung@gmail.com"
+	},
+	{
+		"id": 31,
+		"chineseName": "劉兆漢",
+		"position": ["退休教員"],
+		"education": "美國布朗大學博士",
+		"Specializations": [],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 32,
+		"chineseName": "李羅權",
+		"position": ["退休教員"],
+		"education": "美國加州理工學院博士",
+		"Specializations": ["太空物理", "電漿物理"],
+		"phone": "0",
+		"website": "#",
+		"email": "jlun@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 33,
+		"chineseName": "王顯達",
+		"position": ["退休教員"],
+		"education": "美國馬利蘭大學博士",
+		"Specializations": [],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 34,
+		"chineseName": "林崇安",
+		"position": ["退休教員"],
+		"education": "美國萊斯大學博士",
+		"Specializations": ["太空電漿物理"],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 35,
+		"chineseName": "趙寄昆",
+		"position": ["退休教員"],
+		"education": "美國麻省理工學院博士",
+		"Specializations": ["太空電漿物理", "太空物理"],
+		"phone": "0",
+		"website": "#",
+		"email": "jkchao@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 36,
+		"chineseName": "蔡偉雄",
+		"position": ["退休教員"],
+		"education": "國立中央大學碩士",
+		"Specializations": ["電離層物理", "電離層物理"],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 37,
+		"chineseName": "蘇信一",
+		"position": ["退休教員"],
+		"education": "美國達特茅斯學院博士",
+		"Specializations": ["太空物理", "天體動力學"],
+		"phone": "0",
+		"website": "#",
+		"email": "sysu@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 38,
+		"chineseName": "郭富雄",
+		"position": ["退休教員"],
+		"education": "美國凱斯西儲大學博士",
+		"Specializations": ["電離層物理", "高層大氣物理"],
+		"phone": "0",
+		"website": "#",
+		"email": "fskuo@cc.vit.edu.tw"
+	},
+	{
+		"id": 39,
+		"chineseName": "葉惠卿",
+		"position": ["退休教員"],
+		"education": "美國萊斯大學博士",
+		"Specializations": ["太空物理", "人造衛星資料應用"],
+		"phone": "0",
+		"website": "#",
+		"email": "yeh@csrsddc.csrsr.ncu.edu.tw"
+	},
+	{
+		"id": 40,
+		"chineseName": "陳明桂",
+		"position": ["退休教員"],
+		"education": "國立中央大學博士",
+		"Specializations": ["理論物理", "磁層物理", "數值模擬"],
+		"phone": "0",
+		"website": "#",
+		"email": "cmq@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 41,
+		"chineseName": "呂凌霄",
+		"position": ["退休教員"],
+		"education": "美國阿拉斯加大學博士",
+		"Specializations": ["太空物理", "電漿物理", "數值模擬"],
+		"phone": "(03)422-7151 #65771",
+		"website": "http://www.ss.ncu.edu.tw/~lyu/",
+		"email": "lyu@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 42,
+		"chineseName": "張竣凱",
+		"position": ["博士後研究"],
+		"education": "國立中央大學博士",
+		"Specializations": ["太空電漿數值模式及計算", "太空資料分析"],
+		"phone": "0",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 43,
+		"chineseName": "楊淨怡",
+		"position": ["行政人員"],
+		"education": "",
+		"Specializations": ["系務"],
+		"phone": "65750",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 44,
+		"chineseName": "彭莉雅",
+		"position": ["行政人員"],
+		"education": "",
+		"Specializations": ["協助系務"],
+		"phone": "65751",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 45,
+		"chineseName": "林梅萍",
+		"position": ["行政人員"],
+		"education": "",
+		"Specializations": ["科技部計畫", "協助系務"],
+		"phone": "65756",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 46,
+		"chineseName": "傅家琦",
+		"position": ["行政人員"],
+		"education": "",
+		"Specializations": ["網管", "個資", "職業安全衛生"],
+		"phone": "65768",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 47,
+		"chineseName": "張秋菊",
+		"position": ["行政人員"],
+		"education": "",
+		"Specializations": ["公文傳送", "環境"],
+		"phone": "65778",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 48,
+		"chineseName": "賴淑銘",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "34808",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 49,
+		"chineseName": "粘琬菁",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "34837",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 50,
+		"chineseName": "莊旭昭",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "65779",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 51,
+		"chineseName": "龔煦棻",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "65779",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 52,
+		"chineseName": "蔡慧琴",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "34843",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 53,
+		"chineseName": "劉捷然",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "65772",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 54,
+		"chineseName": "陳耀淳",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "65780",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 55,
+		"chineseName": "楊登詅",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "65784",
+		"website": "#",
+		"email": "x"
+	},
+	{
+		"id": 56,
+		"chineseName": "王秀蓉",
+		"position": ["專任助理"],
+		"education": "",
+		"Specializations": [],
+		"phone": "65784",
+		"website": "#",
+		"email": "x"
 	}
 ]

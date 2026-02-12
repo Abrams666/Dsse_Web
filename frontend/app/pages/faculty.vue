@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import faciltyPositions from "./assets/json/facultyPosition.json";
+import faciltyPositionsFile from "./assets/json/facultyPosition.json";
 import facilties from "./assets/json/faculty.json";
 
 import BusinessCard from "~/components/faculty/businessCard.vue";
@@ -34,6 +34,7 @@ import BusinessCard from "~/components/faculty/businessCard.vue";
 const selectedPositions = ref([]);
 const selectedPositionNames = ref([]);
 const selectedFaculties = ref([]);
+const faciltyPositions = faciltyPositionsFile.positions;
 
 const updateSelectedFaculties = () => {
 	selectedPositionNames.value = [];
@@ -53,8 +54,6 @@ const updateSelectedFaculties = () => {
 			}
 		}
 	}
-
-	console.log(selectedFaculties.value);
 };
 
 const selectAll = () => {
@@ -75,10 +74,12 @@ const clickText = (i) => {
 	selectedPositions.value[i] = !selectedPositions.value[i];
 };
 
+selectedPositions.value = faciltyPositionsFile.defaultSelect;
 for (let i = 0; i < faciltyPositions.length; i++) {
-	selectedPositions.value.push(true);
+	if (selectedPositions.value[i]) {
+		selectedPositionNames.value.push(faciltyPositions[i]);
+	}
 }
-selectedPositionNames.value = faciltyPositions;
 
 updateSelectedFaculties();
 
