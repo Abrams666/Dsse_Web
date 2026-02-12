@@ -1,0 +1,8 @@
+[
+	{ "name": "首頁 Home", "url": "/", "icon": "fa-solid fa-house" },
+	{ "name": "簡介 Introduction", "url": "#", "icon": "fa-solid fa-circle-info" },
+	{ "name": "人員 Faculty", "url": "/faculty", "icon": "fa-solid fa-people-group" },
+	{ "name": "招生 Admission", "url": "#", "icon": "fa-solid fa-ticket" },
+	{ "name": "規章 Regulation", "url": "#", "icon": "fa-solid fa-gavel" },
+	{ "name": "成就 Achievement", "url": "#", "icon": "fa-solid fa-trophy" }
+]

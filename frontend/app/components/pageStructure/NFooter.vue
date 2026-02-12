@@ -1,9 +1,9 @@
 <template>
-	<footer class="w-screen h-auto bg-(--color1) text-(--color4) p-8 pb-1 flex flex-col items-center justify-center">
+	<footer class="w-screen h-auto bg-[var(--color1)] text-[var(--color4)] p-8 pb-1 flex flex-col items-center justify-center">
 		<div class="w-full h-auto flex flex-row items-stretch justify-between">
 			<div class="w-1/2 h-auto flex flex-col items-start justify-between">
 				<div class="w-full h-auto flex flex-row items-center justify-left gap-3">
-					<img class="w-1/9 aspect-1:1" src="/pageStructure/dsseLogo.png" alt="" />
+					<img class="w-[12%] aspect-square" src="/pageStructure/dsseLogo.png" alt="" />
 					<div class="w-auto h-auto flex flex-col items-start justify-center">
 						<p class="text-2xl font-bold">國立中央大學太空科學與工程學系</p>
 						<p id="english">Department of Space Science and Engineering, NCU</p>
@@ -19,23 +19,8 @@
 			<div class="w-1/5 h-auto flex flex-col items-start justify-start">
 				<p class="font-bold text-[1.2rem] mb-2">Pages</p>
 				<ul>
-					<li>
-						<a href="/"><i class="fa-solid fa-house"></i>首頁 Home</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-solid fa-circle-info"></i>簡介 Introduction</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-solid fa-people-group"></i>人員 Faculty</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-solid fa-ticket"></i>招生 Admission</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-solid fa-gavel"></i>規章 Regulation</a>
-					</li>
-					<li>
-						<a href="#"><i class="fa-solid fa-trophy"></i>成就 Achievement</a>
+					<li v-for="(page, index) in pages" :key="index">
+						<a :href="page.url"><i :class="page.icon"></i>{{ page.name }}</a>
 					</li>
 				</ul>
 			</div>
@@ -62,3 +47,7 @@
 		</div>
 	</footer>
 </template>
+
+<script setup>
+import pages from "./assets/json/pages.json";
+</script>

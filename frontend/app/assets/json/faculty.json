@@ -1,0 +1,40 @@
+[
+	{
+		"id": 1,
+		"chineseName": "張起維",
+		"englishName": "Loren Chang",
+		"position": ["教授", "太空系系主任", "特聘教授"],
+		"Specializations": [
+			"大氣潮汐",
+			"行星波",
+			"中氣層",
+			"下層恆溫層",
+			"大氣-電離層耦合",
+			"衛星資料分析",
+			"衛星遙測",
+			"小型人造衛星",
+			"太空輻射",
+			"科學酬載"
+		],
+		"email": "loren@jupiter.ss.ncu.edu.tw"
+	},
+	{
+		"id": 2,
+		"chineseName": "陳建志",
+		"englishName": "Chien-Chih Chen",
+		"position": ["教授", "特聘教授"],
+		"Specializations": [
+			"大氣潮汐",
+			"行星波",
+			"中氣層",
+			"下層恆溫層",
+			"大氣-電離層耦合",
+			"衛星資料分析",
+			"衛星遙測",
+			"小型人造衛星",
+			"太空輻射",
+			"科學酬載"
+		],
+		"email": "cchen@jupiter.ss.ncu.edu.tw"
+	}
+]
