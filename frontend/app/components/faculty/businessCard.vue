@@ -1,9 +1,7 @@
 <template>
 	<div id="card" class="w-[500px] aspect-[7/5] relative" :class="{ active: isFlip, inactive: !isFlip }">
 		<div id="front" class="w-[500px] aspect-[7/4] bg-[var(--color4)] flex flex-row justify-center items-center gap-5 p-5 absolute top-0 left-0">
-			<div
-				class="w-1/3 h-[90%] border-r-[var(--color2)] border-r-5 flex items-center justify-center border-r-[var(--color1)] border-r-[5px] pr-3"
-			>
+			<div class="w-1/3 h-[90%] border-r-[var(--color2)] border-r-5 flex items-center justify-center border-r-[5px] pr-3">
 				<img :src="`/faculty/f${props.id}.png`" alt="" class="h-auto w-full" />
 			</div>
 			<div class="w-2/3 h-[80%] flex flex-col justify-between gap-3 text-[var(--color1)]">
@@ -16,7 +14,9 @@
 				<ul class="h-[65%] flex flex-col justify-center">
 					<li>電話:{{ props.phone }}</li>
 					<li>Email:{{ props.email }}</li>
-					<li>網頁:{{ props.website }}</li>
+					<li>
+						網頁:<a :href="props.website" target="_blank">{{ props.website }}</a>
+					</li>
 				</ul>
 			</div>
 		</div>
