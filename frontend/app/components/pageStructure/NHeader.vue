@@ -1,6 +1,12 @@
 <template>
 	<header class="w-screen h-20 bg-[var(--color1)] p-4 fixed top-0 left-0 z-50 flex flex-row items-center justify-between">
-		<a href="/" class="h-12 aspect-[1:1]"><img src="/pageStructure/dsseLogo.png" class="h-full aspect-[1:1]" alt="" /></a>
+		<a href="/" class="h-full w-auto flex flex-row items-center gap-3"
+			><img src="/pageStructure/dsseLogo.png" class="h-full aspect-[1:1]" alt="" />
+			<div class="flex flex-col items-start justify-center">
+				<h1 class="text-[var(--color4)] font-bold text-[1.15rem]">國立中央大學太空科學與工程學系</h1>
+				<p class="text-[var(--color4)] text-[0.85rem]">Department of Space Science and Engineering, NCU</p>
+			</div></a
+		>
 		<ul class="h-full w-auto flex flex-row justify-center items-center gap-5">
 			<li v-for="(link, index) in pages" :key="index">
 				<a :href="link.url" class="text-base text-[var(--color4)]"><i :class="link.icon"></i>{{ link.name }}</a>

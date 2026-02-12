@@ -22,8 +22,16 @@
 		</div>
 		<div
 			id="back"
-			class="w-[500px] aspect-[7/4] bg-[var(--color1)] flex flex-row justify-center items-center gap-5 p-5 absolute top-0 left-0"
-		></div>
+			class="w-[500px] aspect-[7/4] bg-[var(--color1)] flex flex-col justify-start items-left gap-5 p-5 absolute top-0 left-0 text-[var(--color4)] text-xl"
+		>
+			<p>學歷:{{ props.education }}</p>
+			<div class="flex flex-col flex-no-wrap">
+				<p>專長:</p>
+				<div class="flex flex-row flex-wrap">
+					<p v-for="specialization in props.specializations">{{ specialization }}、</p>
+				</div>
+			</div>
+		</div>
 		<input
 			type="button"
 			id="flip"
@@ -42,6 +50,8 @@ const props = defineProps({
 	phone: String,
 	email: String,
 	website: String,
+	education: String,
+	specializations: Array,
 });
 const isFlip = ref(false);
 

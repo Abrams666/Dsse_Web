@@ -1,7 +1,9 @@
 services:
     frontend:
         image: frontend
-        build: ./frontend
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile.dev
         volumes:
             - ./frontend:/app
             - /app/node_modules

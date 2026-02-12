@@ -21,6 +21,8 @@
 			:phone="faculty.phone"
 			:email="faculty.email"
 			:website="faculty.website"
+			:education="faculty.education"
+			:specializations="faculty.Specializations"
 		/>
 	</section>
 </template>
