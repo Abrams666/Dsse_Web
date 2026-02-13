@@ -1,0 +1,67 @@
+[
+	{
+		"id": 6,
+		"title": "國立中央大學 114 學年度大學申請入學第二階段甄試「報到及應試時間表」，考生請於甄試當日依公告之最晚報到時間前辦理報到。",
+		"tag": "招生",
+		"date": "2025-05-09",
+		"publishDate": "2025-05-09",
+		"content": "",
+		"fileLinks": ["https://www.ss.ncu.edu.tw/resources/Admission/114%E7%94%84%E8%A9%A6%E6%99%82%E9%96%93%E8%A1%A8.pdf"]
+	},
+	{
+		"id": 5,
+		"title": "114學年度太空系五年雙學位獲推薦名單。",
+		"tag": "其他",
+		"date": "2025-07-15",
+		"publishDate": "2025-07-15",
+		"content": "",
+		"fileLinks": [
+			"https://www.ss.ncu.edu.tw/resources/News/114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%A4%AA%E7%A9%BA%E7%B3%BB%E4%BA%94%E5%B9%B4%E9%9B%99%E5%AD%B8%E4%BD%8D%E6%8E%A8%E8%96%A6%E5%90%8D%E5%96%AE.pdf"
+		]
+	},
+	{
+		"id": 4,
+		"title": "115學年度國立中央大學 地球科學學院「碩士班甄試聯合招生」，一次報考，多元選擇！歡迎加入中央大學地球科學學院！線上報名：114/9/30 -114/10/7 。",
+		"tag": "招生",
+		"date": "2025-09-30",
+		"publishDate": "2025-09-11",
+		"content": "",
+		"fileLinks": [
+			"https://escollege.ncu.edu.tw/zh_tw/Announcement/Announcement1/115%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%9C%B0%E7%A7%91%E9%99%A2%E7%A2%A9%E5%A3%AB%E7%8F%AD%E6%9A%A8%E5%A4%AA%E9%81%99%E4%B8%AD%E5%BF%83%E9%81%99%E6%B8%AC%E7%A7%91%E6%8A%80%E7%A2%A9%E5%A3%AB%E5%AD%B8%E4%BD%8D%E5%AD%B8%E7%A8%8B%E7%94%84%E8%A9%A6%E5%85%A5%E5%AD%B8%E8%81%AF%E5%90%88%E6%8B%9B%E7%94%9F-7878452"
+		]
+	},
+	{
+		"id": 3,
+		"title": "115學年度太空系「博士班甄試入學錄取新生報到須知」。",
+		"tag": "招生",
+		"date": "2025-10-21",
+		"publishDate": "2025-10-21",
+		"content": "",
+		"fileLinks": [
+			"https://www.ss.ncu.edu.tw/resources/Admission/115%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%A4%AA%E7%A9%BA%E7%B3%BB%E5%8D%9A%E5%A3%AB%E7%8F%AD%E7%94%84%E8%A9%A6%E5%85%A5%E5%AD%B8%E9%8C%84%E5%8F%96%E6%96%B0%E7%94%9F%E5%A0%B1%E5%88%B0%E9%A0%88%E7%9F%A5.pdf"
+		]
+	},
+	{
+		"id": 2,
+		"title": "115 學年度太空科學與工程學系「特殊選才招生複試時間表及須知」，請通過初試之考生提早15分鐘完成報到，並準備 5 分鐘簡報介紹。",
+		"tag": "招生",
+		"date": "2025-10-28",
+		"publishDate": "2025-10-28",
+		"content": "",
+		"fileLinks": [
+			"https://www.ss.ncu.edu.tw/resources/Admission/115%E7%89%B9%E6%AE%8A%E9%81%B8%E6%89%8D%E5%88%9D%E8%A9%A6%E9%80%9A%E9%81%8E%E5%90%8D%E5%96%AE%E3%80%81%E8%A4%87%E8%A9%A6%E6%99%82%E9%96%93%E8%A1%A8%E5%8F%8A%E9%A0%88%E7%9F%A5-2.pdf"
+		]
+	},
+	{
+		"id": 1,
+		"title": "國立中央大學 115 學年度地科院碩士班聯合招生「得參加複試名單」及「招生口試說明及時間表」已公告至中央大學地球科學學院首頁。",
+		"tag": "招生",
+		"date": "2025-10-31",
+		"publishDate": "2025-10-31",
+		"content": "",
+		"fileLinks": [
+			"https://www.ss.ncu.edu.tw/resources/Admission/115%E5%9C%B0%E7%A7%91%E9%99%A2%E8%81%AF%E6%8B%9B%E5%BE%97%E5%8F%83%E5%8A%A0%E8%A4%87%E8%A9%A6%E5%96%AE%E5%85%AC%E5%91%8A(1031%E5%85%AC%E5%91%8A).pdf",
+			"https://www.ss.ncu.edu.tw/resources/Admission/115%E5%9C%B0%E7%A7%91%E9%99%A2%E6%9A%A8%E5%A4%AA%E9%81%99%E4%B8%AD%E5%BF%83%E8%81%AF%E5%90%88%E6%8B%9B%E7%94%9F%E5%8F%A3%E8%A9%A6%E6%99%82%E9%96%93%E8%A1%A8(1031%E5%85%AC%E5%91%8A).pdf"
+		]
+	}
+]
