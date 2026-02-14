@@ -5,7 +5,7 @@
 		<input type="button" @click="closeEmergencyInfo" value="X" class="h-2/3 font-bold aspect-square  bg-[var(--color4)] text-red-700 cursor-pointer"></input>
 	</section>
 	<section id="bg" class="w-screen h-screen pt-10 mt-10 flex flex-row items-center justify-start">
-		<h1 class="ml-[45vw] mb-[5rem] flex flex-row items-center justify-center gap-5 text-[80px] text-[var(--color4)] font-bold">
+		<h1 id="typing" class="ml-[45vw] mb-[5rem] flex flex-row items-center justify-center gap-5 text-[80px] text-[var(--color4)] font-bold ">
 			We're<textTyping :text="['Students', 'Scientists', 'Engineers', 'Future']" :time="10000" />
 		</h1>
 	</section>
@@ -46,6 +46,9 @@ for (let i = newsData.length-1; i>=newsData.length-6 && i>=0; i--) {
 </script>
 
 <style scoped>
+#typing {
+	font-family:  sans-serif;
+}
 #bg {
 	background-image: url("/index/bg1.jpg");
 	background-size: cover;

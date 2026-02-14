@@ -1,5 +1,5 @@
 * {
-	font-family: sans-serif;
+	font-family: "D-DIN", sans-serif;
 	text-decoration: none;
 	outline: none;
 }
@@ -10,9 +10,19 @@
 	--color4: #d9edf8;
 }
 ::-webkit-scrollbar {
-	display: none;
+	/* display: none; */
 }
 
 ul {
 	list-style: none;
+}
+
+@font-face {
+	font-family: "D-DIN";
+	src: url("/fonts/D-DIN.otf") format("otf");
+}
+
+@font-face {
+	font-family: "D-DIN Bold";
+	src: url("/fonts/D-DIN-Bold.otf") format("otf");
 }

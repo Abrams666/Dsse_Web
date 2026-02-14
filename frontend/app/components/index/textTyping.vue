@@ -74,6 +74,7 @@ onMounted(async () => {
 	margin-right: 5px;
 	color: var(--color4);
 	font-weight: bold;
+	font-family: sans-serif;
 }
 
 #text.active {
