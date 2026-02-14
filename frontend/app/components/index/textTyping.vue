@@ -82,7 +82,7 @@ onMounted(async () => {
 }
 
 #text.inactive {
-	font-size: 30px;
+	font-size: 10vw;
 }
 
 #cursor {
