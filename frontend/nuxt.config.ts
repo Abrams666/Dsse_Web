@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
-	css: ["~/assets/css/css.css"],
+	css: ["~/assets/css/css.css", "@fortawesome/fontawesome-svg-core/styles.css"],
 	modules: ["@nuxtjs/tailwindcss"],
 	app: {
 		head: {

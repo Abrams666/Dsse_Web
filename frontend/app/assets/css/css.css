@@ -10,7 +10,7 @@
 	--color4: #d9edf8;
 }
 ::-webkit-scrollbar {
-	/* display: none; */
+	display: none;
 }
 
 ul {
