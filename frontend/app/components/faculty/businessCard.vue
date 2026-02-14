@@ -1,5 +1,5 @@
 <template>
-	<div id="card" class="lg:w-[500px] w-[300px] aspect-[7/5] relative" :class="{ active: isFlip, inactive: !isFlip }">
+	<div id="card" class="lg:w-[500px] w-full aspect-[7/5] relative" :class="{ active: isFlip, inactive: !isFlip }">
 		<div id="front" class="w-full aspect-[7/4] bg-[var(--color4)] flex flex-row justify-center items-center gap-5 p-5 absolute top-0 left-0">
 			<div class="w-1/3 h-[90%] border-r-[var(--color2)] border-r-5 flex items-center justify-center border-r-[5px] pr-3">
 				<img :src="`/faculty/f${props.id}.png`" alt="" class="h-auto w-full" />
