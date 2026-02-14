@@ -1,17 +1,17 @@
 <template>
-	<div id="card" class="w-[500px] aspect-[7/5] relative" :class="{ active: isFlip, inactive: !isFlip }">
-		<div id="front" class="w-[500px] aspect-[7/4] bg-[var(--color4)] flex flex-row justify-center items-center gap-5 p-5 absolute top-0 left-0">
+	<div id="card" class="lg:w-[500px] w-[300px] aspect-[7/5] relative" :class="{ active: isFlip, inactive: !isFlip }">
+		<div id="front" class="w-full aspect-[7/4] bg-[var(--color4)] flex flex-row justify-center items-center gap-5 p-5 absolute top-0 left-0">
 			<div class="w-1/3 h-[90%] border-r-[var(--color2)] border-r-5 flex items-center justify-center border-r-[5px] pr-3">
 				<img :src="`/faculty/f${props.id}.png`" alt="" class="h-auto w-full" />
 			</div>
 			<div class="w-2/3 h-[80%] flex flex-col justify-between gap-3 text-[var(--color1)]">
-				<div class="h-[35%] flex flex-col gap-1 border-b-[var(--color2)] border-b-2 pb-1">
-					<h2 class="text-4xl font-bold">{{ props.name }}</h2>
-					<div class="flex flex-row items-center justify-left gap-1">
-						<p v-for="position in props.positions">{{ position }} /</p>
+				<div class="lg:h-[35%] flex flex-col lg:gap-1 gap-0 border-b-[var(--color2)] border-b-2 lg:pb-1 pb-0">
+					<h2 class="lg:text-4xl text-2xl font-bold">{{ props.name }}</h2>
+					<div class="flex flex-row items-center justify-left lg:gap-1 gpa-0">
+						<p v-for="position in props.positions" class="lg:text-[1rem] text-[0.6rem]">{{ position }} /</p>
 					</div>
 				</div>
-				<ul class="h-[65%] flex flex-col justify-center">
+				<ul class="h-[65%] flex flex-col justify-center lg:text-[1rem] text-[0.6rem]">
 					<li>電話:{{ props.phone }}</li>
 					<li>Email:{{ props.email }}</li>
 					<li>
@@ -22,7 +22,7 @@
 		</div>
 		<div
 			id="back"
-			class="w-[500px] aspect-[7/4] bg-[var(--color1)] flex flex-col justify-start items-left gap-5 p-5 absolute top-0 left-0 text-[var(--color4)] text-xl"
+			class="w-full aspect-[7/4] bg-[var(--color1)] flex flex-col justify-start items-left gap-5 p-5 absolute top-0 left-0 text-[var(--color4)] lg:text-xl text-[0.75rem]"
 		>
 			<p>學歷:{{ props.education }}</p>
 			<div class="flex flex-col flex-no-wrap">
@@ -35,7 +35,7 @@
 		<input
 			type="button"
 			id="flip"
-			class="w-[60%] h-[10%] bg-[var(--color3)] rounded-full absolute bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer text-[var(--color1)] text-lg"
+			class="w-[60%] h-[10%] bg-[var(--color3)] rounded-full absolute bottom-0 left-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer text-[var(--color1)] lg:text-lg text-[0.8rem]"
 			value="View More"
 			@click="flip"
 		/>
