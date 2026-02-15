@@ -4,5 +4,5 @@
 	{ "name": "人員 Faculty", "url": "/faculty", "icon": "fa-solid fa-people-group" },
 	{ "name": "招生 Admission", "url": "#", "icon": "fa-solid fa-ticket" },
 	{ "name": "規章 Regulation", "url": "/regulation", "icon": "fa-solid fa-gavel" },
-	{ "name": "成就 Achievement", "url": "#", "icon": "fa-solid fa-trophy" }
+	{ "name": "媒體 Media", "url": "/media", "icon": "fa-solid fa-video" }
 ]
