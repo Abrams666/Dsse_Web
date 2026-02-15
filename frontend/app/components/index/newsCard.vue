@@ -3,7 +3,7 @@
 		<p class="w-[5%] flex flex-row items-center justify-start gap-2 font-bold" :id="`tag-${props.news.id}`">{{ props.news.tag }}</p>
 		<h3 class="w-[75%] overflow-hidden text-[var(--color4)]">{{ props.news.title }}</h3>
 		<p class="w-[10%] text-[var(--color4)] flex flex-row justify-end">{{ props.news.date }}</p>
-		<a class="w-[10%] hover:underline flex flex-row justify-end text-[var(--color4)]">View Detail ></a>
+		<a :href="`/news/${props.news.id}`" class="w-[10%] hover:underline flex flex-row justify-end text-[var(--color4)]">View Detail ></a>
 	</div>
 </template>
 

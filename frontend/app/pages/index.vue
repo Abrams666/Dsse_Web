@@ -13,7 +13,7 @@
 		<div class="w-full h-full backdrop-blur-md rounded-xl p-10 flex flex-col items-start lg:justify-between justify-start gap-5">
 			<div class="w-full h-[10%] flex flex-row items-center justify-between">
 				<h1 class="text-[var(--color4)] font-bold lg:text-3xl text-2xl">最新消息<br v-if="isMobile"/>NEWS</h1>
-				<a href="#" class="lg:w-32 w-24 h-8 text-[var(--color1)] bg-[var(--color3)] rounded-full flex items-center justify-center">View More</a>
+				<a href="/news" class="lg:w-32 w-24 h-8 text-[var(--color1)] bg-[var(--color3)] rounded-full flex items-center justify-center">View All</a>
 			</div>
 			<div class="w-full lg:h-[85%] h-auto border-[1px] border-[var(--color4)] rounded-md pl-3 pr-3 flex flex-col items-start justify-between">
 				<newsCard v-for="xnews in news" :news="xnews"/>

@@ -21,6 +21,7 @@
 		"mongodb": "^7.0.0",
 		"mongoose": "^8.19.3",
 		"path": "^0.12.7",
+		"pg": "^8.18.0",
 		"url": "^0.11.4"
 	},
 	"devDependencies": {
