@@ -25,14 +25,15 @@
 <script setup>
 import textTyping from "~/components/index/textTyping.vue";
 import newsCard from "~/components/index/newsCard.vue";
-
 import emergencyInfo from "~/assets/json/emergencyInfo.json";
-import newsData from "~/assets/json/news.json";
 
-const isMobile = ref(false);
 const showEmergencyInfo = ref(false);
 const news=ref([]);
 const showNewsNum = ref(6)
+
+const props = defineProps({
+	isMobile : Boolean
+})
 
 const closeEmergencyInfo = () => {
 	showEmergencyInfo.value = false;
@@ -42,19 +43,11 @@ if (emergencyInfo.info !== "") {
 	showEmergencyInfo.value = true;
 }
 
-onMounted(() => {
-	if (window.innerWidth <= 1024) {
-		isMobile.value = true;
-		showNewsNum.value=5;
-	} else {
-		isMobile.value = false;
-		showNewsNum.value=6;
-	}
-
-	for (let i = newsData.length-1; i>=newsData.length-showNewsNum.value && i>=0; i--) {
-		news.value.push(newsData[i]);
-}
-});
+onMounted(async()=>{
+	news.value = await $fetch("/api/news/6/all",{
+		method: "GET",
+	})
+})
 </script>
 
 <style scoped>

@@ -1,0 +1,11 @@
+CREATE TABLE news (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  tag SMALLINT NOT NULL,
+  date DATE NOT NULL,
+  publishDate DATE NOT NULL DEFAULT CURRENT_DATE,
+  content VARCHAR(1024),
+  fileLinks VARCHAR(255)[]
+)
+
+INSERT INTO news (title, tag, date, content, fileLinks) VALUES ('title', 'tag', '2026-02-15', 'content', ARRAY['testLink1','testLink2']);
