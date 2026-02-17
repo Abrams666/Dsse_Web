@@ -128,8 +128,8 @@ watch(
 
 <style scoped>
 #bg {
-	background-image: url("/faculty/bg1.png");
+	background-image: url("/news/bg1.jpg");
 	background-size: cover;
-	background-position: top;
+	background-position: bottom;
 }
 </style>

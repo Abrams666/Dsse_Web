@@ -8,4 +8,11 @@ CREATE TABLE news (
   fileLinks VARCHAR(255)[]
 )
 
-INSERT INTO news (title, tag, date, content, fileLinks) VALUES ('title', 'tag', '2026-02-15', 'content', ARRAY['testLink1','testLink2']);
+CREATE TABLE news (
+  id SERIAL PRIMARY KEY,
+  account VARCHAR(128) NOT NULL,
+  password VARCHAR(128) NOT NULL,
+  access SMALLINT NOT NULL
+);
+
+INSERT INTO admins (account, password, access) VALUES ('abrams', 'abramspwd', 2);

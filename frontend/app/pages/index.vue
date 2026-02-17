@@ -16,7 +16,7 @@
 				<a href="/news" class="lg:w-32 w-24 h-8 text-[var(--color1)] bg-[var(--color3)] rounded-full flex items-center justify-center">View All</a>
 			</div>
 			<div class="w-full lg:h-[85%] h-auto border-[1px] border-[var(--color4)] rounded-md pl-3 pr-3 flex flex-col items-start justify-between">
-				<newsCard v-for="xnews in news" :news="xnews"/>
+				<newsCard class="cards" v-for="xnews in news" :news="xnews"/>
 			</div>
 		</div>
 	</section>
@@ -62,5 +62,8 @@ onMounted(async()=>{
 	background-image: url("/index/bg2.jpg");
 	background-size: cover;
 	background-position: top;
+}
+.cards:last-child{
+	border-bottom: 0;
 }
 </style>

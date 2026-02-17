@@ -4,6 +4,10 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ["~/assets/css/css.css", "@fortawesome/fontawesome-svg-core/styles.css"],
 	modules: ["@nuxtjs/tailwindcss"],
+	routeRules: {
+		"/admin": { appLayout: "admin" },
+		"/admin/login": { appLayout: "admin" },
+	},
 	app: {
 		head: {
 			title: "國立中央大學太空科學與工程學系",
