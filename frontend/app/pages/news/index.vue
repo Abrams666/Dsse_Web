@@ -12,7 +12,7 @@
 		</div>
 	</section>
 	<section class="w-screen h-auto flex flex-row justify-evenly items-center gap-5 flex-wrap p-10 bg-[var(--color2)]">
-		<div v-for="news in selectedNews" class="w-full h-auto bg-[var(--color1)] flex flex-row justify-between p-5">
+		<div v-for="news in selectedNews" class="w-full h-auto bg-[var(--color1)] flex flex-row justify-between items-center p-5">
 			<p class="w-[5%]" :style="`color: ${news.content};`">{{ news.tag }}</p>
 			<p class="w-[70%] text-wrap text-[var(--color4)]">{{ news.title }}</p>
 			<p class="w-[10%] text-[var(--color4)]">{{ news.date.substr(0, 10) }}</p>

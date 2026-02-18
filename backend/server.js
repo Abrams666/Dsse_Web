@@ -24,7 +24,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/news/:num/:cat", async (req, res) => {
-	console.log("API HITTTT");
+	//console.log("API HITTTT");
 	const newsNum = Number(req.params.num);
 	const catalog = String(req.params.cat);
 	let conditions = "";
@@ -53,7 +53,7 @@ app.get("/news/:id/", async (req, res) => {
 });
 
 app.post("/admin/auth/login", async (req, res) => {
-	console.log(req.body);
+	//console.log(req.body);
 	const { account, pwd } = req.body;
 
 	const result = await pool.query("SELECT id FROM admins WHERE account = $1 AND password = $2", [account, pwd]);
@@ -66,6 +66,118 @@ app.post("/admin/auth/login", async (req, res) => {
 		const token = jwt.sign({ id: result.rows[0].id }, SECRET_KEY, { expiresIn: "1h" });
 		res.status(200);
 		res.json({ message: "Succeed.", token });
+	}
+});
+
+app.post("/admin/auth/verify", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+		const result = await pool.query("SELECT * FROM admins WHERE id = $1", [tokenDecoded.id]);
+		res.status(200).json({
+			message: "Token is ok.",
+			userId: tokenDecoded.id,
+			account: result.rows[0].account,
+			access: result.rows[0].access,
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
+	}
+});
+
+app.post("/admin/news/add", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+
+		const { title, content, date, tag, links } = req.body;
+
+		const result = await pool.query("INSERT INTO news (title, content, date, tag, filelinks) VALUES ($1, $2, $3, $4, $5)", [
+			title,
+			content,
+			date,
+			tag,
+			links,
+		]);
+
+		res.status(200).json({
+			message: "News added successfully.",
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
+	}
+});
+
+app.post("/admin/news/update", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+
+		const { title, content, date, tag, links, id } = req.body;
+
+		const result = await pool.query(
+			"UPDATE news SET title = $1, content = $2, date = $3, tag = $4, filelinks = $5, publishDate = CURRENT_DATE WHERE id = $6",
+			[title, content, date, tag, links, id],
+		);
+
+		res.status(200).json({
+			message: "News updated successfully.",
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
+	}
+});
+
+app.post("/admin/news/delete", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+
+		const { id } = req.body;
+
+		const result = await pool.query("DELETE FROM news WHERE id = $1", [id]);
+
+		res.status(200).json({
+			message: "News deleted successfully.",
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
 	}
 });
 

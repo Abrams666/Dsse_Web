@@ -17,8 +17,8 @@ const props = defineProps({
 });
 
 onMounted(() => {
-	newsTag.value = newsCatalog.tags[Number(props.news.id) - 1];
+	newsTag.value = newsCatalog.tags[Number(props.news.tag) - 1];
 	let tag = document.getElementById(`tag-${props.news.id}`);
-	tag.style.color = newsCatalog.colors[Number(props.news.id) - 1];
+	tag.style.color = newsCatalog.colors[Number(props.news.tag) - 1];
 });
 </script>

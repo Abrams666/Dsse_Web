@@ -11,8 +11,10 @@
 		<p class="w-full h-auto flex flex-row items-start justify-start bg-[var(--color1)] p-5 text-[var(--color4)] text-wrap">
 			{{ news.content }}
 		</p>
-		<div class="w-full h-auto flex flex-col items-start justify-start bg-[var(--color1)] p-5 text-[var(--color4)]">
-			<a v-for="link in news.filelinks" :href="link"><font-awesome-icon icon="fa-solid fa-link" /> {{ link }}</a>
+		<div class="w-full h-auto flex flex-col items-start justify-start bg-[var(--color1)] p-5 text-[var(--color4)] overflow-clip">
+			<a class="flex flex-row justify-start items-center flex-no-wrap text-wrap" v-for="link in news.filelinks" :href="link"
+				><font-awesome-icon icon="fa-solid fa-link" /> {{ link }}</a
+			>
 		</div>
 	</section>
 </template>
