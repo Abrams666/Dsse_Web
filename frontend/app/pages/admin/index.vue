@@ -13,9 +13,16 @@
 					<input
 						@click="clickNav(1)"
 						v-if="showNav[0]"
-						class="w-full h-[50px] bg-[var(--color2)] cursor-pointer text-[var(--color4)] text-left p-3"
+						class="w-full h-[50px] border-b-[1px] border-b-[var(--color1)] bg-[var(--color2)] cursor-pointer text-[var(--color4)] text-left p-3"
 						type="button"
 						value="News Management"
+					/>
+					<input
+						@click="clickNav(2)"
+						v-if="showNav[1]"
+						class="w-full h-[50px] border-b-[1px] border-b-[var(--color1)] bg-[var(--color2)] cursor-pointer text-[var(--color4)] text-left p-3"
+						type="button"
+						value="Regulation Management"
 					/>
 				</div>
 			</div>
@@ -24,6 +31,7 @@
 		<div class="w-[85%] h-full p-20 pb-0 bg-[var(--color4)] flex flex-col items-start justify-start overflow-y-auto">
 			<welcome v-if="showComponent[0]" :account="account" />
 			<news v-if="showComponent[1]" />
+			<regulation v-if="showComponent[2]" />
 		</div>
 	</section>
 </template>
@@ -31,6 +39,7 @@
 <script setup>
 import welcome from "~/components/admin/welcome.vue";
 import news from "~/components/admin/news.vue";
+import regulation from "~/components/admin/regulation.vue";
 
 const userId = ref();
 const account = ref("");

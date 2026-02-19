@@ -15,4 +15,14 @@ CREATE TABLE news (
   access SMALLINT NOT NULL
 );
 
+CREATE TABLE regulations (
+  id SERIAL PRIMARY KEY,
+  date DATE NOT NULL DEFAULT CURRENT_DATE,
+  tag SMALLINT NOT NULL,
+  fileName VARCHAR(128) NOT NULL,
+  docLink VARCHAR(256) NOT NULL
+);
+
 INSERT INTO admins (account, password, access) VALUES ('abrams', 'abramspwd', 2);
+
+docker exec -it postgres_db psql -U postgres -d mydb

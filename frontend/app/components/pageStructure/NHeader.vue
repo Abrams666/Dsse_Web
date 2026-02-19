@@ -12,7 +12,7 @@
 			class="h-auto lg:w-auto w-full flex items-center justify-center absolute lg:static left-0 top-20 lg:bg-transparent bg-[var(--color1)]"
 		>
 			<ul class="h-auto w-auto flex lg:flex-row flex-col items-start gap-2 p-3 lg:p-0 lg:justify-center lg:items-center lg:gap-5">
-				<li v-for="(link, index) in pages" :key="index" class="flex flex-row items-center gap-[2px] justify-center">
+				<li v-for="(link, index) in pages" :key="index" class="flex flex-row items-center gap-[2px] justify-center hover:underline">
 					<font-awesome-icon v-if="isMobile" :icon="link.icon" class="text-[var(--color4)]" />
 					<a :href="link.url" class="text-base text-[var(--color4)]"><i :class="link.icon"></i>{{ link.name }}</a>
 				</li>

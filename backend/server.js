@@ -52,8 +52,12 @@ app.get("/news/:id/", async (req, res) => {
 	res.status(200).json(result.rows);
 });
 
+app.get("/regulation", async (req, res) => {
+	const result = await pool.query("SELECT * FROM regulations");
+	res.status(200).json(result.rows);
+});
+
 app.post("/admin/auth/login", async (req, res) => {
-	//console.log(req.body);
 	const { account, pwd } = req.body;
 
 	const result = await pool.query("SELECT id FROM admins WHERE account = $1 AND password = $2", [account, pwd]);
@@ -94,6 +98,7 @@ app.post("/admin/auth/verify", async (req, res) => {
 	}
 });
 
+//news edit
 app.post("/admin/news/add", async (req, res) => {
 	const authHeader = req.headers.authorization;
 	if (!authHeader) {
@@ -174,6 +179,90 @@ app.post("/admin/news/delete", async (req, res) => {
 
 		res.status(200).json({
 			message: "News deleted successfully.",
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
+	}
+});
+
+//regulation edit
+app.post("/admin/regulation/add", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+
+		const { tag, fileName, docLink } = req.body;
+
+		const result = await pool.query("INSERT INTO regulations (tag, fileName, docLink) VALUES ($1, $2, $3)", [tag, fileName, docLink]);
+
+		res.status(200).json({
+			message: "Regulation added successfully.",
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
+	}
+});
+
+app.post("/admin/regulation/update", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+
+		const { tag, fileName, docLink, id } = req.body;
+
+		const result = await pool.query("UPDATE regulations SET tag = $1, fileName = $2, docLink = $3, date = CURRENT_DATE WHERE id = $4", [
+			tag,
+			fileName,
+			docLink,
+			id,
+		]);
+
+		res.status(200).json({
+			message: "Regulation updated successfully.",
+		});
+	} catch (err) {
+		console.log("Verify Error:", err);
+		res.status(401).json({ message: "Token is invalid." });
+	}
+});
+
+app.post("/admin/regulation/delete", async (req, res) => {
+	const authHeader = req.headers.authorization;
+	if (!authHeader) {
+		res.status(400);
+		res.json({ message: "Token not found." });
+		return;
+	}
+
+	const token = authHeader.split(" ")[1];
+
+	try {
+		const tokenDecoded = jwt.verify(token, SECRET_KEY);
+
+		const { id } = req.body;
+
+		const result = await pool.query("DELETE FROM regulations WHERE id = $1", [id]);
+
+		res.status(200).json({
+			message: "Regulation deleted successfully.",
 		});
 	} catch (err) {
 		console.log("Verify Error:", err);
